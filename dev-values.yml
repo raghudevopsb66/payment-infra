@@ -3,3 +3,15 @@ appPort: 8080
 appVersion: 3.0.2
 externalSecret:
   enabled: true
+resources:
+   limits:
+     cpu: 800m
+     memory: 1000Mi
+   requests:
+     cpu: 800m
+     memory: 1000Mi
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80

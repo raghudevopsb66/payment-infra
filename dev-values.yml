@@ -8,7 +8,7 @@ resources:
      cpu: 1600m
      memory: 1500Mi
    requests:
-     cpu: 16000m
+     cpu: 1600m
      memory: 1500Mi
 autoscaling:
   enabled: true
